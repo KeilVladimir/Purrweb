@@ -1,0 +1,33 @@
+.slider{
+    width: 512px;
+    margin: 0 auto;
+    height: 312px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px ;
+    justify-content: flex-end;
+}
+.slider_images{
+    width: 512px;
+    height: 341px;
+    float: left;
+}
+.buttons{
+    width: 10%;
+    margin: 0 auto;
+}
+.dot_none_active{
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+.dot_active{
+    background-color: gray;
+}
+.dots-block{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+}
