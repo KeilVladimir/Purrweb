@@ -114,6 +114,9 @@ let left = document.getElementById("left");
 let right = document.getElementById("right");
 
 function AnimateRight(type) {
+     for(let i=0;i<dot.length;i++){
+        dot[i].onclick = null;
+    }
     left.onclick = null;
     right.onclick = null;
     let container3 = document.querySelectorAll(".slider_images")
@@ -150,11 +153,15 @@ function AnimateRight(type) {
             container3[1].style.transform = 'translateX(' + 0 + 'px)';
             left.onclick = AnimateToLeft;
             right.onclick = AnimateRight;
+        DotsClick();
         },
         2560)
 }
 
 function AnimateToLeft(type) {
+     for(let i=0;i<dot.length;i++){
+        dot[i].onclick = null;
+    }
     let list = document.querySelectorAll(".slider_images");
     left.onclick = null;
     right.onclick = null;
@@ -194,6 +201,7 @@ function AnimateToLeft(type) {
             list[0].style.transform = 'translateX(' + 0 + 'px)';
             left.onclick = AnimateToLeft;
             right.onclick = AnimateRight;
+        DotsClick();
         },
         2560)
 }
